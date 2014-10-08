@@ -899,6 +899,7 @@ static SIAlertView *__si_alert_current_view;
     self.messageLabel = nil;
     [self.buttons removeAllObjects];
     [self.alertWindow removeFromSuperview];
+    [self.alertWindow setUserInteractionEnabled:NO];
     self.alertWindow = nil;
     self.layoutDirty = NO;
 }
